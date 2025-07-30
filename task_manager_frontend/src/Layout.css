@@ -1,0 +1,77 @@
+/* Styles for sidebar/topbar/main layout for modern minimal UI */
+.layout-root {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.sidebar {
+  width: 210px;
+  flex-shrink: 0;
+  background: #1976d2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  gap: 2.5rem;
+  min-height: 100vh;
+  box-shadow: 2px 0 10px 0 #eee;
+}
+.sidebar-title {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2.3rem;
+}
+.sidebar-link {
+  font-size: 1.05rem;
+  color: #fff;
+  opacity: 0.92;
+  margin-bottom: 1.2rem;
+  text-decoration: none;
+  transition: opacity 0.2s, color 0.18s;
+  font-weight: 500;
+  display: block;
+}
+.sidebar-link:hover { opacity: 1; color: #ff4081; }
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  background: #fff;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1.3rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.user-profile {
+  color: #424242;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.main-area {
+  flex: 1;
+  padding: 2rem 2.1rem 2rem 2.1rem;
+  background: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content, .main-area {
+    padding-left: 0; padding-right: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-area { padding: 0.2rem; }
+}
