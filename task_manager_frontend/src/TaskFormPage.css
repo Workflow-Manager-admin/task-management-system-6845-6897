@@ -1,0 +1,30 @@
+/* Styles for task creation/edit form */
+.task-form-section {
+  background: #fff;
+  border-radius: 11px;
+  margin: 2rem auto;
+  max-width: 540px;
+  box-shadow: 0 2px 14px rgba(33,50,70,0.08);
+  padding: 1.7rem 2rem 2.2rem 2rem;
+}
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.task-form label {
+  font-weight: 500;
+  color: #1455a6;
+  margin-bottom: 0.45rem;
+  display: block;
+}
+.task-form textarea.input {
+  font-family: inherit;
+  min-height: 74px;
+  resize: vertical;
+}
+.task-form-actions {
+  display: flex;
+  gap: 0.9em;
+  margin-top: 0.7em;
+}

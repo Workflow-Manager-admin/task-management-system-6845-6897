@@ -1,0 +1,67 @@
+/* Styles for task list, filter/sort controls, item statuses */
+.task-list-section {
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 14px rgba(33,50,70,0.08);
+  max-width: 800px;
+  margin: 1.8rem auto;
+  padding: 1.5rem 2.5rem;
+}
+
+.task-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list-controls {
+  margin-top: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.task-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+.task-item {
+  background: #f9fcff;
+  margin-bottom: 0.85rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px #e6eaf7;
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+.task-title {
+  color: #1976d2;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.task-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.btn-small {
+  font-size: .94em;
+  padding: .33em .9em;
+}
+
+.status-todo { color: #1976d2; background: #eaf3fb; border-radius: 6px; padding: 0 7px;}
+.status-in_progress { color: #ff9300; background: #fff1e3; border-radius:6px; padding:0 7px;}
+.status-completed { color: #25b66c; background: #e2f7ec; border-radius:6px; padding:0 7px;}
+.task-time { font-size:0.85em; color:#999; }

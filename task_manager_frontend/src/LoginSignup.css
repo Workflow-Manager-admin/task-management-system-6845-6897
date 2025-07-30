@@ -1,0 +1,73 @@
+/* Minimal styles for login/signup */
+.auth-container {
+  max-width: 340px;
+  margin: 88px auto;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08), 0 1.5px 8px rgba(0,0,0,0.02);
+  border-radius: 18px;
+  background: #fff;
+  padding: 2rem 1.7rem 2.2rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fafcfc;
+  color: #222;
+}
+
+.btn.btn-primary {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1em;
+  font-weight: 600;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.btn.btn-primary:hover { background: #1455a6;}
+
+.btn.btn-accent {
+  background: #ff4081;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1em;
+  font-weight: 600;
+  margin-left: .7em;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.btn.btn-accent:hover { background: #c93363; }
+
+.btn.btn-secondary {
+  background: #f5f5f5;
+  color: #424242;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  padding: 0.6em 1em;
+  font-weight: 500;
+  margin-left: .7em;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.btn.btn-secondary:hover { background: #e2e2e2; }
+
+.btn:disabled { opacity: 0.7; cursor: not-allowed; }
+.error { color: #d32f2f; margin-top: 1em; }
+.info  { color: #1976d2; margin-top: 1em; }
+
+.title { font-size: 2rem; color: #1976d2; font-weight: 700; letter-spacing: 1px; margin-bottom: 1.1em; text-align: center;}
+.centered { text-align: center; margin-top: 2em; }
